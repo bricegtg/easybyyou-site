@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About — Easy By You</title>
-  <meta name="description" content="Built by an operator who runs a few dozen agents himself.">
+  <title>How it works — Easy By You</title>
+  <meta name="description" content="Installs in minutes. Runs in the agent you already use.">
   <meta name="theme-color" content="#F7F5F0">
-  <meta property="og:title" content="About — Easy By You">
-  <meta property="og:description" content="Built by an operator who runs a few dozen agents himself.">
+  <meta property="og:title" content="How it works — Easy By You">
+  <meta property="og:description" content="Installs in minutes. Runs in the agent you already use.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://easybyyou.ai/about.html">
+  <meta property="og:url" content="https://easybyyou.ai/how-it-works.html">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="canonical" href="https://easybyyou.ai/about.html">
+  <link rel="canonical" href="https://easybyyou.ai/how-it-works.html">
 </head>
 <body>
   <header class="site-header">
@@ -23,11 +23,11 @@
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">Menu</button>
       <ul class="nav-links" id="nav-menu">
       <li><a href="kits.html">Kits</a></li>
-      <li><a href="how-it-works.html">How it works</a></li>
+      <li><a href="how-it-works.html" aria-current="page">How it works</a></li>
       <li><a href="trust.html">Trust</a></li>
       <li><a href="pricing.html">Pricing</a></li>
       <li><a href="free.html">Free skill</a></li>
-      <li><a href="about.html" aria-current="page">About</a></li>
+      <li><a href="about.html">About</a></li>
         <li><a class="btn btn-primary" href="pricing.html">Get Ops Desk</a></li>
       </ul>
     </div>
@@ -35,19 +35,44 @@
   <main>
     <section class="page-hero">
       <div class="container">
-        <p class="eyebrow">About</p>
-        <h1>Built inside a live multi-agent operation.</h1>
-        <p class="lead">Easy By You comes from running agents against real inbox, pipeline, and reporting work — and learning which rules make that safe.</p>
+        <p class="eyebrow">How it works</p>
+        <h1>Installs in minutes. Runs in the agent you already use.</h1>
+        <p class="lead">No new platform to learn. Skills land as SKILL.md folders your agent already understands.</p>
       </div>
     </section>
     <section class="section">
-      <div class="container content-block">
-        <p>I’m Brice Adler. I run businesses that already depend on agents for ops, creative, and client work. The skills on this site started as internal standing orders: draft, don’t send; cite, don’t guess; stay quiet when nothing changed.</p>
-        <p>Creative skill marketplaces already exist. What’s thin is ops: the inbox, the CRM, the morning brief, the claim that almost went public. That’s the gap Easy By You fills — packaged so any team on Cursor, Claude Code, or Codex can install the same discipline.</p>
-        <p>We sell kits, not a hosted platform. Your data stays in your accounts. You keep the final word on every send.</p>
-        <div class="btn-row">
-          <a class="btn btn-primary" href="pricing.html">See pricing</a>
-          <a class="btn btn-outline" href="mailto:hello@easybyyou.ai">hello@easybyyou.ai</a>
+      <div class="container two-col">
+        <div class="content-block">
+          <h2>1. Install</h2>
+          <p>Download a kit zip, or copy one skill folder into your agent’s skills directory. One command for CLI agents; drag-and-drop for folder-based setups.</p>
+          <h2>2. Connect</h2>
+          <p>Fill in <code>config.yaml</code> once: inbox account, CRM, timezone, company voice, and which tools the skill may read. Examples ship with every kit.</p>
+          <h2>3. Approve</h2>
+          <p>Run on a schedule or on demand. Drafts appear in your agent chat or a designated folder. You approve the exact item — send, edit, or ignore.</p>
+          <div class="badges" style="margin-top:2rem">
+            <span class="badge">Cursor</span><span class="badge">Claude Code</span><span class="badge">Codex</span><span class="badge">Any SKILL.md agent</span>
+          </div>
+        </div>
+        <div>
+          <div class="product-card">
+            <div class="product-card-head"><p class="title">config.example.yaml</p><span class="badge-approved">Template</span></div>
+            <div class="product-card-body">
+              <div class="sample-output" style="margin:0;border:0;padding:0;background:transparent">
+                <pre>timezone: Asia/Riyadh
+voice: senior, brief, no hype
+inbox:
+  provider: gmail
+  label: needs-reply
+crm:
+  provider: your-crm
+  stages: [lead, qualified, proposal]
+approval:
+  mode: exact-item
+  never_auto_send: true</pre>
+              </div>
+            </div>
+          </div>
+          <p style="margin-top:1.25rem;font-size:0.9rem;color:var(--slate)">Skills run on your machine and your accounts. Easy By You never receives your inbox or CRM data.</p>
         </div>
       </div>
     </section>
