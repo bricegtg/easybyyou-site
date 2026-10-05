@@ -1,2 +1,5 @@
-# easybyyou-site
-Easy By You — sales site preview (ops agent skills)
+# Easy By You
+
+Static sales site for easybyyou.ai.
+
+Open `index.html` locally or deploy as a static site (publish path `.`).
